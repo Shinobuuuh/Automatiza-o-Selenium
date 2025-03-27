@@ -1,7 +1,4 @@
 package automatizado.page;
-
-import org.junit.FixMethodOrder;
-import org.junit.runners.MethodSorters;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
