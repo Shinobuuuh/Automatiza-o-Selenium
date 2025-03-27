@@ -32,10 +32,7 @@ public class LoginPO extends BasePO {
     }
 
 
-    public void escrever(WebElement input, String texto){
-        input.clear();
-        input.sendKeys(texto + Keys.TAB);
-    }
+
 
 
     public String obterMensagem(){
@@ -55,9 +52,7 @@ public class LoginPO extends BasePO {
         buttonEntrar.click();
     }
 
-    public String obterTituloPagina(){
-        return driver.getTitle();
-    }
+
 
     
 }

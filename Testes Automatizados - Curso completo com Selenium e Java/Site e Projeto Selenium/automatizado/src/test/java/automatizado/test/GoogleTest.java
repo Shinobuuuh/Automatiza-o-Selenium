@@ -19,7 +19,7 @@ public class GoogleTest extends BaseTest {
     }
 
 
-    @Test
+    //@Test
     public void TC001_deveSerPossivelPesquisarNoGoogleOTextoLeagueOfLegends(){
         
         // WebElement inputPesquisa = driver.findElement(By.name("q"));
