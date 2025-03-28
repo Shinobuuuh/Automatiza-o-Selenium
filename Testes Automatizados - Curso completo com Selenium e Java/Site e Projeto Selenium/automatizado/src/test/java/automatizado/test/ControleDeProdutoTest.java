@@ -5,7 +5,6 @@ import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
-
 import automatizado.builder.ProdutoBuilder;
 import automatizado.page.ControleDeProdutoPO;
 import automatizado.page.LoginPO;
@@ -49,7 +48,7 @@ public class ControleDeProdutoTest extends BaseTest {
         // Definimos a mensagem que vamos comparar com a mensagem recebida
         String mensagem = "Todos os campos são obrigatórios para o cadastro!";
 
-        //Abre o Modal
+        // Abre o Modal
         controlleProdutoPage.buttonAdicionar.click();
 
         // Aqui cria o objeto para adicionar na tela, resumindo cria o Builder
@@ -63,11 +62,11 @@ public class ControleDeProdutoTest extends BaseTest {
                 .adicionarValor(1.1)
                 .builder();
 
-        
-
-        /* Capturar mensagem de erro e compara com a mensagem que definimos na String mensagem */
+        /*
+         * Capturar mensagem de erro e compara com a mensagem que definimos na String
+         * mensagem
+         */
         assertEquals(mensagem, controlleProdutoPage.spanMensagem.getText());
-
 
     }
 

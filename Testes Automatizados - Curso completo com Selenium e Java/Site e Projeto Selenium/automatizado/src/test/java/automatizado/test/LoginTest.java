@@ -3,7 +3,6 @@ package automatizado.test;
 import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
-
 import automatizado.page.LoginPO;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;

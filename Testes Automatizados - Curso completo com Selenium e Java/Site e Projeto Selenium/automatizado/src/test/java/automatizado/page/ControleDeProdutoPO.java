@@ -3,11 +3,9 @@ package automatizado.page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import automatizado.builder.ProdutoBuilder;
-
 public class ControleDeProdutoPO extends BasePO {
 
+    //#region WebElements
     @FindBy(id = "btn-adicionar")
     public WebElement buttonAdicionar;
 
@@ -40,11 +38,13 @@ public class ControleDeProdutoPO extends BasePO {
 
     @FindBy(id = "mensagem")
     public WebElement spanMensagem;
+    //#endregion WebElements
 
+    //#region Construtor
     public ControleDeProdutoPO(WebDriver driver) {
         super(driver);
     }
-
+    //#endregion
     
 
 }
