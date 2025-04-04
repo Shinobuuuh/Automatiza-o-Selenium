@@ -3,9 +3,10 @@ package automatizado.test;
 import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
-import automatizado.page.LoginPO;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+
+import automatizado.page.LoginPO;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LoginTest extends BaseTest {
@@ -24,7 +25,7 @@ public class LoginTest extends BaseTest {
 
         String mensagem = loginPage.obterMensagem();
 
-        assertEquals(mensagem, "Informe usuário e senha, os campos não podem ser brancos.");
+        assertEquals(mensagem, "Informe usuário e senha, os campos não podemm ser brancos.");
 
     }
 

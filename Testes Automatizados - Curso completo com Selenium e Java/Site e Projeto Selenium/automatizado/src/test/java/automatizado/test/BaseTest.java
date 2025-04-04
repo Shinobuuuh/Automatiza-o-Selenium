@@ -16,10 +16,10 @@ public abstract class BaseTest {
 
     /**
      * só para caso vá utilizar uma URL fixa como por exemplo Google.com ai neste
-     * caso precisa alterar a linha 49 para driver.get(URL_BASE);
+     * caso precisa alterar a linha 70 para driver.get(URL_BASE);
      * 
      * @return * só para caso vá utilizar uma URL fixa como por exemplo Google.com
-     *         ai neste caso precisa alterar a linha 49 para driver.get(URL_BASE);
+     *         ai neste caso precisa alterar a linha 70 para driver.get(URL_BASE);
      */
     // private static String URL_BASE = "C:/Curso QA Testes
     // Automatizados/Automatiza-o-Selenium/Testes Automatizados - Curso completo com
