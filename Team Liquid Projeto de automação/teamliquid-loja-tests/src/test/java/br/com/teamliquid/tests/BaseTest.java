@@ -11,7 +11,7 @@ public abstract class BaseTest {
     protected static WebDriver driver;
 
     private static String URL_BASE = "https://loja.teamliquid.com.br";
-    private static String CAMINHO_DRIVER = "src/test/java/br/com/teamliquid/resource/chromedriver-v13406998.exe";
+    private static String CAMINHO_DRIVER = "src/test/java/br/com/teamliquid/resource/chromedriver-v1360710392.exe";
 
     /**
      * Método para iniciar o driver no navegador antes de qualquer classe de teste

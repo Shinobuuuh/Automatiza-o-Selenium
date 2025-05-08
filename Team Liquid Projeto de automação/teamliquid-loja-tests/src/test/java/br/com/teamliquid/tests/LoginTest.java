@@ -5,22 +5,16 @@ import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
-
 import br.com.teamliquid.page.LoginPO;
-import br.com.teamliquid.page.PaginaInicialPO;
-
-
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LoginTest extends BaseTest {
 
     private static LoginPO loginPage;
-    private static PaginaInicialPO paginaInicial;
 
     @BeforeClass
     public static void prepararTestes() {
         loginPage = new LoginPO(driver);
-        paginaInicial = new PaginaInicialPO(driver);
-        paginaInicial.buttonLoginPage.click();
+        loginPage.buttonLoginPage.click();
 
         assertEquals("Conta – Team Liquid Brazil", loginPage.obterTituloPagina());
 
@@ -112,14 +106,14 @@ public class LoginTest extends BaseTest {
     @Test
     public void TC009_deveDeslogarDoSistemaAoClicarNoBotaoSair() {
 
-        paginaInicial.buttonLoginPage.click();
+        loginPage.buttonLoginPage.click();
         
         loginPage.executarAcaoDeLogar("murillo.tester29@gmail.com", "TestsQA123Pass");
 
 
         loginPage.buttonRealizarLogoff.click();
 
-        assertEquals("Fazer login", paginaInicial.buttonLoginPage.getText());
+        assertEquals("Fazer login", loginPage.buttonLoginPage.getText());
 
     }
     
